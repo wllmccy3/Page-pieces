@@ -1,0 +1,24 @@
+@import "vars", "nav";
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0%;
+    background-color: $background-color;
+    font-family: 'Courier New', Courier, monospace;
+    a{
+        color: whitesmoke;
+        text-decoration: none;
+        padding: 1rem;
+        display: inline-block;
+        &.active{
+            background-color: darken($accent-color, 20%);
+        }
+        &:hover{
+            background-color: $primary-color;
+            color: black;
+        }
+    }
+}
